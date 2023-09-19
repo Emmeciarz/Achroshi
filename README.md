@@ -14,6 +14,8 @@ Achroshi
 </p>
 </ br>
 
+## :eyes: Inspiracja
+## :milky_way: Geneza nazwy
 
 ## :bookmark_tabs: Do Zrobienia
 - System rejestracji
@@ -25,7 +27,7 @@ Achroshi
 - Podstrona o nas
 - Podstrona kontakt
 
-
+## :camera: Zrzuty Ekranu
 
 ## 💻 Obsługiwane Przeglądarki
 | :warning: |   :heavy_check_mark:    |  :heavy_check_mark:  |  :heavy_check_mark:  |  :heavy_check_mark:  |   :x:  |
@@ -40,10 +42,10 @@ Achroshi
 ## :link: Linki
 <p align="center">
   <a href="https://discord.gg/QdaPyy9Ntp">
-    <img src="https://skillicons.dev/icons?i=discord" width="70"/>
+    <img src="https://skillicons.dev/icons?i=discord" width="50"/>
   </a>
    <a href="https://github.com/Emmeciarz">
-    <img src="https://skillicons.dev/icons?i=github" width="70"/>
+    <img src="https://skillicons.dev/icons?i=github" width="50"/>
   </a>
 </p>
 
