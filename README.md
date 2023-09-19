@@ -2,7 +2,7 @@
 <h1 align="center">
 Achroshi
 </h1>
-<p align="center">Strona portfolio której celem jest ukazanie zdolności tworzenia stron oraz ich komercjalizacja z wykorzystaniem poniższych technologi w zaawansowanym stopniu</p>
+<p align="center">Strona portfolio, której celem jest ukazanie zdolności tworzenia stron oraz ich komercjalizacja z wykorzystaniem poniższych technologi w zaawansowanym stopniu</p>
 <p align="center">
   <img src="https://skillicons.dev/icons?i=bootstrap" width="40"/>
   <img src="https://skillicons.dev/icons?i=html" width="40"/>
