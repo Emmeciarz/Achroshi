@@ -2,7 +2,7 @@
 <h1 align="center">
 Achroshi
 </h1>
-<p align="center">Strona wizytowa/O autorze której celem jest ukazanie zdolności tworzenia strony z wykorzystaniem poniższych technologi.</p>
+<p align="center">Strona wizytówkowa/o autorze której celem jest ukazanie zdolności tworzenia stron oraz ich wdrażanie w publiczny obieg z zawansowanym wykorzystaniem poniższych technologi.</p>
 <p align="center">
   <img src="https://skillicons.dev/icons?i=bootstrap" width="40"/>
   <img src="https://skillicons.dev/icons?i=html" width="40"/>
