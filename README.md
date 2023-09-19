@@ -2,7 +2,7 @@
 <h1 align="center">
 Achroshi
 </h1>
-<p align="center">Portfolio ukazujące umiejętności tworzenia stron internetowych i ich komercjalizacji z wykorzystaniem następujących technologii</p>
+<p align="center">Portfolio ukazujące umiejętności tworzenia stron internetowych pod kątem SEO i preferencji użytkowników z wykorzystaniem następujących technologii</p>
 <p align="center">
   <img src="https://skillicons.dev/icons?i=bootstrap" width="40"/>
   <img src="https://skillicons.dev/icons?i=html" width="40"/>
