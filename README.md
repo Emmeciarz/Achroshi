@@ -15,6 +15,7 @@ Achroshi
 </ br>
 
 ## :eyes: Inspiracja
+Pomysł na stworzenie strony w motywie opierającym się na monochromatyczności pojawił się w moim umyśle po zobaczeniu teledysku piosenki "Bad Apple" oryginalnie wywodzącej się ze znanej serii gier Touhou Project zapoczątkowanej 15 sierpnia 1997r.
 ## :milky_way: Geneza nazwy
 
 ## :bookmark_tabs: Do Zrobienia
