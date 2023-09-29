@@ -1,0 +1,232 @@
+@use "utilities" as *;
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-size: 62.5%;
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: "Rubik", sans-serif;
+	font-size: 2.6rem;
+	background-color: #333;
+}
+
+nav {
+	text-transform: uppercase;
+	font-family: "Cormorant Garamond", sans-serif;
+	background-color: $nav-main-color;
+	.collapse {
+		align-items: center;
+	}
+	.navbar {
+		&-toggler {
+			color: $nav-secondary-color;
+			transform: translateY(5px);
+			&-icon {
+				background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+				width: 32px;
+				height: 32px;
+			}
+		}
+		&-brand-img {
+			font-size: 4rem;
+			color: $text-color;
+			max-width: 205px;
+			max-height: 110px;
+		}
+	}
+	.nav {
+		&-link {
+			color: $text-color;
+			text-align: center;
+		}
+		&-link:hover {
+			color: $text-color;
+		}
+		&-link:focus {
+			color: $text-color;
+		}
+		&-item {
+			position: relative;
+			font-size: 2rem;
+			padding: 15px 20px 0px 20px;
+		}
+		&-item,
+		&-item::after,
+		&-item::before {
+			transition: 0.3s;
+		}
+		&-img {
+			transition: 0.3s;
+			background-image: url(../img/login.png);
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: contain;
+			margin-top: 0.7em;
+		}
+		&-img:hover {
+			background-image: url(../img/login2.png);
+		}
+		&-button:hover {
+			animation: heartbeat 2s ease-in-out infinite both;
+		}
+		&-button {
+			position: relative;
+			background: none;
+			border: none;
+			font-size: 2rem;
+			padding: 3.4em 5em 1em 5em;
+		}
+		&-cta {
+			text-transform: uppercase;
+			text-decoration: none;
+			font-weight: bold;
+			color: $text-alt-color;
+		}
+	}
+	.nav-item::after {
+		content: "";
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		height: 3px;
+		width: 100%;
+		transform: scaleX(0);
+		background-color: $nav-secondary-color;
+	}
+	.nav-item:hover::after {
+		transform: scaleX(1);
+	}
+
+	@keyframes heartbeat {
+		from {
+			transform: scale(1);
+			transform-origin: center center;
+			animation-timing-function: ease-out;
+		}
+		10% {
+			transform: scale(0.91);
+			animation-timing-function: ease-in;
+		}
+		17% {
+			transform: scale(0.98);
+			animation-timing-function: ease-out;
+		}
+		33% {
+			transform: scale(0.87);
+			animation-timing-function: ease-in;
+		}
+		45% {
+			transform: scale(1);
+			animation-timing-function: ease-out;
+		}
+	}
+}
+
+@media (min-width: 320px) {
+	nav .navbar-toggler {
+		margin-right: 2em;
+	}
+	nav .nav-button {
+		padding: 3.4em 6em 1em 6em;
+	}
+}
+
+@media (min-width: 360px) {
+	nav .navbar-brand-img {
+		max-width: 270px;
+		max-height: 110px;
+	}
+	nav .navbar-toggler {
+		margin-right: 1em;
+	}
+	nav .nav-button {
+		padding: 3.4em 7em 1em 7em;
+	}
+}
+
+@media (min-width: 375px) {
+	nav .navbar-brand-img {
+		max-width: 280px;
+		max-height: 110px;
+	}
+	nav .navbar-toggler {
+		margin-right: 1.2em;
+	}
+	nav .nav-button {
+		padding: 3.4em 7.5em 1em 7.5em;
+	}
+}
+
+@media (min-width: 411px) {
+	nav .navbar-toggler {
+		margin-right: 2.2em;
+	}
+	nav .navbar-toggler-icon {
+		width: 40px;
+		height: 40px;
+	}
+	nav .nav-button {
+		padding: 3.4em 8.5em 1em 8.5em;
+	}
+}
+
+@media (min-width: 540px) {
+	nav .navbar-toggler {
+		margin-right: 5em;
+	}
+	nav .navbar-toggler-icon {
+		width: 45px;
+		height: 45px;
+	}
+	nav .nav-button {
+		padding: 3.4em 11.5em 1em 11.5em;
+	}
+}
+
+@media (min-width: 768px) {
+	nav .navbar-toggler {
+		margin-right: 5em;
+	}
+	nav .navbar-toggler-icon {
+		width: 52px;
+		height: 52px;
+	}
+	nav .nav-button {
+		padding: 3.4em 17.2em 1em 17.2em;
+	}
+}
+
+@media (min-width: 992px) {
+	nav .navbar-toggler {
+		margin-right: 5em;
+	}
+	nav .navbar-toggler-icon {
+		width: 55px;
+		height: 55px;
+	}
+	nav .nav-button {
+		padding: 3.4em 23em 1em 23em;
+	}
+}
+
+@media (min-width: 1200px) {
+	nav .nav-button {
+		font-size: 2.2rem;
+		padding: 2.5em 5em 0.7em 5em;
+	}
+	nav .nav-img {
+		margin: 0;
+	}
+	nav .nav-item {
+		font-size: 1.6rem;
+	}
+}
