@@ -1,9 +1,9 @@
-<p aligin="center">
+<p align="center">
   <img src="https://i.postimg.cc/kX39dtSC/Achr-shi.png?raw=true" alt="Sublime's custom image"/>
 </p>
 
-<p aligin="center">Portfolio ukazujące umiejętności tworzenia stron internetowych pod kątem SEO i preferencji użytkowników z wykorzystaniem następujących technologii</p>
-<p aligin="center">
+<p align="center">Portfolio ukazujące umiejętności tworzenia stron internetowych pod kątem SEO i preferencji użytkowników z wykorzystaniem następujących technologii</p>
+<p align="center">
   <img src="https://skillicons.dev/icons?i=bootstrap" width="40"/>
   <img src="https://skillicons.dev/icons?i=html" width="40"/>
   <img src="https://skillicons.dev/icons?i=scss" width="40"/>
@@ -52,7 +52,7 @@ Nazwa wzięła się z niecodziennego połączenia dwóch słów: achromatyzm & s
 
 ## :link: Linki
 
-<p aligin="center">
+<p align="center">
   <a href="https://discord.gg/QdaPyy9Ntp">
     <img src="https://skillicons.dev/icons?i=discord" width="50"/>
   </a>
