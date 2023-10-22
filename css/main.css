@@ -15,12 +15,16 @@ body {
   font-family: "Rubik", sans-serif;
   font-size: 2.6rem;
   background-color: #333;
+  display: flex;
+  flex-direction: column;
+  min-height: 100dvh;
 }
 
 nav {
   text-transform: uppercase;
   font-family: "Cormorant Garamond", sans-serif;
   background-color: #000000;
+  z-index: 100;
 }
 nav .collapse {
   align-items: center;
@@ -56,7 +60,7 @@ nav .nav-item {
   padding: 15px 20px 0px 20px;
 }
 nav .nav-item, nav .nav-item::after, nav .nav-item::before {
-  transition: 0.3s;
+  transition: 0.4s;
 }
 nav .nav-img {
   transition: 0.3s;
@@ -120,6 +124,157 @@ nav .nav-item:hover::after {
     transform: scale(1);
     animation-timing-function: ease-out;
   }
+}
+
+main {
+  color: #ffffff;
+  flex: 1;
+}
+main .login {
+  background-image: url("../img/loginsmalbackground.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  z-index: 0;
+}
+main .login-shadow {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: -1;
+}
+main .login .form-container {
+  background-color: #000000;
+  border: 2px solid #ddd;
+  border-radius: 15px;
+  padding: 25px;
+  font-size: 1.6rem;
+}
+main .login .form-title {
+  font-size: 2.8rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+main .login .form-element {
+  width: 100%;
+}
+main .login input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  color: #000000;
+  font-size: 16px;
+}
+main .login input:focus {
+  outline: none !important;
+  border-color: #000000;
+  box-shadow: 0 0 10px #000000;
+}
+main .login button {
+  width: 100%;
+  margin: 10px 0px 10px 0px;
+  padding: 2px;
+  background-color: #ffffff;
+  font-size: 2rem;
+  color: #000000;
+  border-radius: 15px;
+  border: 0;
+  cursor: pointer;
+}
+main .login p {
+  margin-top: 15px;
+}
+main .login-link {
+  text-decoration: none;
+}
+main .register {
+  background-image: url("../img/registersmallbackground.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  z-index: 0;
+}
+main .register-shadow {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: -1;
+}
+main .register .form-container {
+  background-color: #000000;
+  border: 2px solid #ddd;
+  border-radius: 15px;
+  padding: 25px;
+  font-size: 1.6rem;
+}
+main .register .form-title {
+  font-size: 2.8rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+main .register .form-element {
+  width: 100%;
+}
+main .register input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  color: #000000;
+  font-size: 16px;
+}
+main .register input:focus {
+  outline: none !important;
+  border-color: #000000;
+  box-shadow: 0 0 10px #000000;
+}
+main .register button {
+  width: 100%;
+  margin: 10px 0px 10px 0px;
+  padding: 2px;
+  background-color: #ffffff;
+  font-size: 2rem;
+  color: #000000;
+  border-radius: 15px;
+  border: 0;
+  cursor: pointer;
+}
+main .register p {
+  margin-top: 15px;
+}
+main .register-link {
+  text-decoration: none;
+}
+
+footer {
+  background-color: #000000;
+  color: #ffffff;
+  font-family: "Cormorant Garamond", sans-serif;
+  font-size: 1.6rem;
+  background-image: url("../img/footer.gif");
+  bottom: 0;
+  width: 100%;
+  z-index: 100;
+}
+footer .footer-link {
+  text-decoration: none;
+  color: #ffffff;
+  transition: 0.3s;
+}
+footer .footer-link:hover {
+  color: #909090;
+}
+footer .footer-link:focus {
+  color: #ffffff;
 }
 
 @media (min-width: 320px) {
@@ -189,6 +344,30 @@ nav .nav-item:hover::after {
   nav .nav-button {
     padding: 3.4em 17.2em 1em 17.2em;
   }
+  main .login .form-container {
+    padding: 50px;
+  }
+  main .login .form-title {
+    padding-bottom: 20px;
+  }
+  main .login .form-element {
+    width: 350px;
+  }
+  main .login {
+    background-image: url("../img/loginbackground.jpg");
+  }
+  main .register .form-container {
+    padding: 50px;
+  }
+  main .register .form-title {
+    padding-bottom: 20px;
+  }
+  main .register .form-element {
+    width: 350px;
+  }
+  main .register {
+    background-image: url("../img/registermediumbackground.png");
+  }
 }
 @media (min-width: 992px) {
   nav .navbar-toggler {
@@ -212,5 +391,8 @@ nav .nav-item:hover::after {
   }
   nav .nav-item {
     font-size: 1.6rem;
+  }
+  main .register {
+    background-image: url("../img/registerlargebackground.png");
   }
 }/*# sourceMappingURL=main.css.map */

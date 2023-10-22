@@ -15,14 +15,19 @@ html {
 
 body {
 	font-family: "Rubik", sans-serif;
+	// font-family: "Cormorant Garamond", sans-serif;
 	font-size: 2.6rem;
 	background-color: #333;
+	display: flex;
+	flex-direction: column;
+	min-height: 100dvh;
 }
 
 nav {
 	text-transform: uppercase;
 	font-family: "Cormorant Garamond", sans-serif;
 	background-color: $nav-main-color;
+	z-index: 100;
 	.collapse {
 		align-items: center;
 	}
@@ -62,7 +67,7 @@ nav {
 		&-item,
 		&-item::after,
 		&-item::before {
-			transition: 0.3s;
+			transition: 0.4s;
 		}
 		&-img {
 			transition: 0.3s;
@@ -128,6 +133,164 @@ nav {
 			transform: scale(1);
 			animation-timing-function: ease-out;
 		}
+	}
+}
+
+main {
+	color: $text-color;
+	flex: 1;
+
+	.login {
+		background-image: url("../img/loginsmalbackground.jpg");
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		width: 100%;
+		z-index: 0;
+
+		&-shadow {
+			position: absolute;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			background-color: rgba(0, 0, 0, 0.7);
+			z-index: -1;
+		}
+
+		.form-container {
+			background-color: $main-color;
+			border: 2px solid #ddd;
+			border-radius: 15px;
+			padding: 25px;
+			font-size: 1.6rem;
+		}
+		.form-title {
+			font-size: 2.8rem;
+			font-weight: bold;
+			text-transform: uppercase;
+		}
+		.form-element {
+			width: 100%;
+		}
+		input {
+			width: 100%;
+			padding: 10px;
+			margin: 10px 0;
+			border: 1px solid $main-color;
+			border-radius: 5px;
+			color: $text-alt-color;
+			font-size: 16px;
+		}
+		input:focus {
+			outline: none !important;
+			border-color: $main-color;
+			box-shadow: 0 0 10px $main-color;
+		}
+		button {
+			width: 100%;
+			margin: 10px 0px 10px 0px;
+			padding: 2px;
+			background-color: $secondary-color;
+			font-size: 2rem;
+			color: $main-color;
+			border-radius: 15px;
+			border: 0;
+			cursor: pointer;
+		}
+		p {
+			margin-top: 15px;
+		}
+		&-link {
+			text-decoration: none;
+		}
+	}
+
+	.register {
+		background-image: url("../img/registersmallbackground.png");
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		width: 100%;
+		z-index: 0;
+
+		&-shadow {
+			position: absolute;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			background-color: rgba(0, 0, 0, 0.7);
+			z-index: -1;
+		}
+
+		.form-container {
+			background-color: $main-color;
+			border: 2px solid #ddd;
+			border-radius: 15px;
+			padding: 25px;
+			font-size: 1.6rem;
+		}
+		.form-title {
+			font-size: 2.8rem;
+			font-weight: bold;
+			text-transform: uppercase;
+		}
+		.form-element {
+			width: 100%;
+		}
+		input {
+			width: 100%;
+			padding: 10px;
+			margin: 10px 0;
+			border: 1px solid $main-color;
+			border-radius: 5px;
+			color: $text-alt-color;
+			font-size: 16px;
+		}
+		input:focus {
+			outline: none !important;
+			border-color: $main-color;
+			box-shadow: 0 0 10px $main-color;
+		}
+		button {
+			width: 100%;
+			margin: 10px 0px 10px 0px;
+			padding: 2px;
+			background-color: $secondary-color;
+			font-size: 2rem;
+			color: $main-color;
+			border-radius: 15px;
+			border: 0;
+			cursor: pointer;
+		}
+		p {
+			margin-top: 15px;
+		}
+		&-link {
+			text-decoration: none;
+		}
+	}
+}
+
+footer {
+	background-color: $footer-main-color;
+	color: $text-color;
+	font-family: "Cormorant Garamond", sans-serif;
+	font-size: 1.6rem;
+	background-image: url("../img/footer.gif");
+	bottom: 0;
+	width: 100%;
+	z-index: 100;
+
+	.footer-link {
+		text-decoration: none;
+		color: $text-color;
+		transition: 0.3s;
+	}
+	.footer-link:hover {
+		color: $text-hover-color;
+	}
+	.footer-link:focus {
+		color: $text-color;
 	}
 }
 
@@ -203,6 +366,31 @@ nav {
 	nav .nav-button {
 		padding: 3.4em 17.2em 1em 17.2em;
 	}
+
+	main .login .form-container {
+		padding: 50px;
+	}
+	main .login .form-title {
+		padding-bottom: 20px;
+	}
+	main .login .form-element {
+		width: 350px;
+	}
+	main .login {
+		background-image: url("../img/loginbackground.jpg");
+	}
+	main .register .form-container {
+		padding: 50px;
+	}
+	main .register .form-title {
+		padding-bottom: 20px;
+	}
+	main .register .form-element {
+		width: 350px;
+	}
+	main .register {
+		background-image: url("../img/registermediumbackground.png");
+	}
 }
 
 @media (min-width: 992px) {
@@ -228,5 +416,8 @@ nav {
 	}
 	nav .nav-item {
 		font-size: 1.6rem;
+	}
+	main .register {
+		background-image: url("../img/registerlargebackground.png");
 	}
 }

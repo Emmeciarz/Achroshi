@@ -25,6 +25,7 @@ Nazwa wzięła się z niecodziennego połączenia dwóch słów: achromatyzm & s
 ## :white_check_mark: Zrobione
 
 - Navbar
+- Footer
 
 ## :bookmark_tabs: Do Zrobienia
 
