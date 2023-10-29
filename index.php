@@ -1,3 +1,10 @@
+<?php
+ini_set('session.gc_maxlifetime', 3600);
+session_set_cookie_params(3600);
+session_start();
+session_regenerate_id(true);
+
+?>
 <!DOCTYPE html>
 <html lang="pl">
 
@@ -5,7 +12,9 @@
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>Achroshi</title>
+	<link rel="icon" type="image/x-icon" href="./img/ico.ico">
 	<meta name="author" content="Kiriu" />
+	<link href="https://fonts.googleapis.com/css?family=Lovers+Quarrel" rel="stylesheet">
 	<link rel="preconnect" href="https://fonts.googleapis.com" />
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 	<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;700&family=Dancing+Script&display=swap" rel="stylesheet" />
@@ -20,7 +29,7 @@
 <body>
 	<nav class="navbar navbar-expand-xl">
 		<div class="container-fluid">
-			<a class="navbar-brand" href="#"><img src="./img/banner.png" class="navbar-brand-img" alt="Achroshi" /></a>
+			<a class="navbar-brand" href="./index.php?home"><img src="./img/banner.png" class="navbar-brand-img" alt="Achroshi" /></a>
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
@@ -36,15 +45,35 @@
 						<a class="nav-link" href="#">Społeczność</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">FAQ</a>
+						<a class="nav-link" href="./index.php?faq">FAQ</a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="#">wesprzyj</a>
 					</li>
-				</ul>
-				<div class="d-flex justify-content-center nav-img ms-auto">
-					<a class="nav-button nav-cta" href="./index.php?login">Login</a>
-				</div>
+					<!-- </ul> -->
+					<?php
+					if (isset($_SESSION["logged_in"])) {
+
+						echo '<div class="">';
+
+						echo '<li class="nav-item-profile dropdown">';
+						echo '<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Profil</a>';
+						echo '<ul class="dropdown-menu">';
+						echo '<li><a class="dropdown-item" href="#">User-name</a></li>';
+						echo '<li><a class="dropdown-item" href="./index.php?login&&wyloguj">Wyloguj</a></li>';
+						echo '</ul>';
+						echo '</li>';
+
+						echo '</div>';
+
+						echo '</ul>';
+					} else {
+						echo '</ul>';
+						echo '<div class="d-flex justify-content-center nav-img ms-auto">';
+						echo '<a class="nav-button nav-cta" href="./index.php?login">Login</a>';
+						echo '</div>';
+					}
+					?>
 			</div>
 		</div>
 	</nav>
@@ -53,27 +82,21 @@
 		function wyswietl($link)
 		{
 			$tablica = [
-				"home" => "./html/index.html",
-				"shop" => "./php/shop.php",
-				"community" => "./html/community.html",
-				"about-us" => "./html/about-us.html",
-				"customer-profile" => "./php/table.php",
-				"profile" => "./php/profile.php",
-				"sign-in" => "./php/sign-in.php",
-				"sign-up" => "./php/sign-up.php",
-
 				"login" => "./php/login.php",
 				"register" => "./php/register.php",
+				"home" => "./php/home.php",
+				"faq" => "./php/faq.php",
 			];
 			if (isset($link) && array_key_exists($link, $tablica)) {
 				include $tablica[$link];
 			} else {
-				echo "ERROR 404";
+				include $tablica["home"];
 			}
 		}
 		echo wyswietl(key($_GET));
 		?>
 	</main>
+
 	<footer>
 		<div class="container text-center py-3">
 			<div class="row">
@@ -96,9 +119,8 @@
 		</div>
 	</footer>
 
-
-
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+	<script src="./js/script.js"></script>
 </body>
 
 </html>

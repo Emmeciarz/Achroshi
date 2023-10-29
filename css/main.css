@@ -44,6 +44,14 @@ nav .navbar-brand-img {
   max-width: 205px;
   max-height: 110px;
 }
+nav .aw {
+  background-image: url(../img/login.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 1em 0em;
+  margin-top: 0.7em;
+}
 nav .nav-link {
   color: #ffffff;
   text-align: center;
@@ -58,6 +66,26 @@ nav .nav-item {
   position: relative;
   font-size: 2rem;
   padding: 15px 20px 0px 20px;
+}
+nav .nav-item-profile {
+  font-size: 2rem;
+  color: #ffffff;
+}
+nav .nav-item-profile .nav-link.show {
+  color: #ffffff;
+}
+nav .nav-item-profile .nav-link:hover,
+nav .nav-item-profile .nav-link:focus,
+nav .nav-item-profile .nav-link:active {
+  color: #ffffff;
+}
+nav .nav-item-profile .dropdown-menu {
+  background-color: #ffffff;
+}
+nav .nav-item-profile .dropdown-item {
+  color: #000000;
+  text-align: center;
+  font-size: 1.6rem;
 }
 nav .nav-item, nav .nav-item::after, nav .nav-item::before {
   transition: 0.4s;
@@ -130,15 +158,15 @@ main {
   color: #ffffff;
   flex: 1;
 }
-main .login {
-  background-image: url("../img/loginsmalbackground.jpg");
+main .form {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   width: 100%;
   z-index: 0;
+  position: relative;
 }
-main .login-shadow {
+main .form .shadow {
   position: absolute;
   top: 0;
   width: 100%;
@@ -146,38 +174,9 @@ main .login-shadow {
   background-color: rgba(0, 0, 0, 0.7);
   z-index: -1;
 }
-main .login .form-container {
-  background-color: #000000;
-  border: 2px solid #ddd;
-  border-radius: 15px;
-  padding: 25px;
-  font-size: 1.6rem;
-}
-main .login .form-title {
-  font-size: 2.8rem;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-main .login .form-element {
+main .form button {
   width: 100%;
-}
-main .login input {
-  width: 100%;
-  padding: 10px;
-  margin: 10px 0;
-  border: 1px solid #000000;
-  border-radius: 5px;
-  color: #000000;
-  font-size: 16px;
-}
-main .login input:focus {
-  outline: none !important;
-  border-color: #000000;
-  box-shadow: 0 0 10px #000000;
-}
-main .login button {
-  width: 100%;
-  margin: 10px 0px 10px 0px;
+  margin: 15px 0px 10px 0px;
   padding: 2px;
   background-color: #ffffff;
   font-size: 2rem;
@@ -186,21 +185,77 @@ main .login button {
   border: 0;
   cursor: pointer;
 }
-main .login p {
+main .form input[type=text],
+main .form input[type=password],
+main .form input[type=email] {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0px 0px 0px;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  color: #000000;
+  font-size: 16px;
+}
+main .form input[type=checkbox] {
+  margin-top: 15px;
+  height: 18px;
+  width: 18px;
+  display: inline;
+}
+main .form input:focus {
+  outline: none !important;
+  border-color: #000000;
+  box-shadow: 0 0 10px #000000;
+}
+main .form .form-container {
+  background-color: #000000;
+  border: 2px solid #ddd;
+  border-radius: 15px;
+  padding: 25px;
+  font-size: 1.6rem;
+}
+main .form .form-title {
+  font-size: 2.8rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+main .form .form-element {
+  width: 100%;
+}
+main .form .link {
+  text-decoration: none;
+}
+main .form .information {
+  display: inline;
+}
+main .form p {
   margin-top: 15px;
 }
-main .login-link {
-  text-decoration: none;
+main .form .notification {
+  color: red;
+}
+main .login {
+  background-image: url("../img/loginsmalbackground.jpg");
 }
 main .register {
   background-image: url("../img/registersmallbackground.png");
+}
+main .register .form-container {
+  margin: 0px 10px 0px 10px;
+}
+main .register button {
+  margin-top: 20px;
+}
+main .faq {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  background-image: url("../img/faqbackground.jpg");
   width: 100%;
   z-index: 0;
+  position: relative;
 }
-main .register-shadow {
+main .faq .shadow {
   position: absolute;
   top: 0;
   width: 100%;
@@ -208,51 +263,144 @@ main .register-shadow {
   background-color: rgba(0, 0, 0, 0.7);
   z-index: -1;
 }
-main .register .form-container {
-  background-color: #000000;
-  border: 2px solid #ddd;
-  border-radius: 15px;
-  padding: 25px;
-  font-size: 1.6rem;
-}
-main .register .form-title {
-  font-size: 2.8rem;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-main .register .form-element {
-  width: 100%;
-}
-main .register input {
-  width: 100%;
-  padding: 10px;
-  margin: 10px 0;
-  border: 1px solid #000000;
-  border-radius: 5px;
+main .faq p {
   color: #000000;
-  font-size: 16px;
+  font-size: 1rem;
+  margin-top: 1em;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
 }
-main .register input:focus {
-  outline: none !important;
-  border-color: #000000;
-  box-shadow: 0 0 10px #000000;
+main .faq .m {
+  margin-top: 6em;
 }
-main .register button {
-  width: 100%;
-  margin: 10px 0px 10px 0px;
-  padding: 2px;
-  background-color: #ffffff;
+main .faq .ttext {
+  text-align: center;
+  font-family: "Cormorant Garamond", sans-serif;
+  font-size: 3rem;
+  margin-top: 2em;
+  color: #000000;
+}
+main .faq .qtext {
+  text-align: center;
+  font-family: "Cormorant Garamond", sans-serif;
   font-size: 2rem;
+  margin-top: 3.5em;
   color: #000000;
-  border-radius: 15px;
-  border: 0;
+}
+main .faq .ftext {
+  font-family: "Lovers Quarrel", sans-serif;
+  text-align: right;
+  font-size: 1.4rem;
+  margin-top: 10em;
+  margin-right: 1em;
+  color: #000000;
+}
+main .faq .page:nth-child(even) {
+  clear: both;
+}
+main .faq .book {
+  transition: opacity 0.4s 0.2s;
+  perspective: 250vw;
+}
+main .faq .book .pages {
+  width: 25rem;
+  height: 30rem;
+  position: relative;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  border-radius: 4px;
+}
+main .faq .book .page {
+  overflow: hidden;
+  float: none;
+  clear: none;
+  margin: 0;
+  position: absolute;
+  top: 0;
+  width: 12.5rem;
+  height: 30rem;
+  transform-origin: 0 0;
+  transition: transform 1.4s;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
   cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  background-color: #ffffff;
 }
-main .register p {
-  margin-top: 15px;
+main .faq .book .page:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0);
+  transition: background 0.7s;
+  z-index: 2;
 }
-main .register-link {
-  text-decoration: none;
+main .faq .book .page:nth-child(odd) {
+  pointer-events: all;
+  transform: rotateY(0deg);
+  right: 0;
+  border-radius: 0 4px 4px 0;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0) 10%);
+}
+main .faq .book .page:nth-child(odd):hover {
+  transform: rotateY(-15deg);
+}
+main .faq .book .page:nth-child(odd):hover:before {
+  background: rgba(0, 0, 0, 0.03);
+}
+main .faq .book .page:nth-child(even) {
+  pointer-events: none;
+  transform: rotateY(180deg);
+  transform-origin: 100% 0;
+  left: 0;
+  border-radius: 4px 0 0 4px;
+  border-color: black;
+  background-image: linear-gradient(to left, rgba(0, 0, 0, 0.12) 0%, rgba(0, 0, 0, 0) 10%);
+}
+main .faq .book .page:nth-child(even):before {
+  background: rgba(0, 0, 0, 0.2);
+}
+main .faq .book .page.grabbing {
+  transition: none;
+}
+main .faq .book .page.flipped:nth-child(odd) {
+  pointer-events: none;
+  transform: rotateY(-180deg);
+}
+main .faq .book .page.flipped:nth-child(odd):before {
+  background: rgba(0, 0, 0, 0.2);
+}
+main .faq .book .page.flipped:nth-child(even) {
+  pointer-events: all;
+  transform: rotateY(0deg);
+}
+main .faq .book .page.flipped:nth-child(even):hover {
+  transform: rotateY(15deg);
+}
+main .faq .book .page.flipped:nth-child(even):hover:before {
+  background: rgba(0, 0, 0, 0.03);
+}
+main .faq .book .page.flipped:nth-child(even):before {
+  background: rgba(0, 0, 0, 0);
+}
+main .faq .book .page.flipped:nth-child(even):before {
+  background: rgba(0, 0, 0, 0);
+}
+main .faq .page:nth-child(odd) {
+  background-position: right top;
+}
+main .home {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  z-index: 0;
+  position: relative;
 }
 
 footer {
@@ -284,6 +432,20 @@ footer .footer-link:focus {
   nav .nav-button {
     padding: 3.4em 6em 1em 6em;
   }
+  main .register .form-element {
+    width: 265px;
+  }
+  main .faq p {
+    font-size: 1.1rem;
+  }
+  main .faq .book .pages {
+    width: 30rem;
+    height: 30rem;
+  }
+  main .faq .book .page {
+    width: 15rem;
+    height: 30rem;
+  }
 }
 @media (min-width: 360px) {
   nav .navbar-brand-img {
@@ -295,6 +457,26 @@ footer .footer-link:focus {
   }
   nav .nav-button {
     padding: 3.4em 7em 1em 7em;
+  }
+  main .faq p {
+    font-size: 1.1rem;
+  }
+  main .faq .ftext {
+    font-size: 1.6rem;
+    margin-top: 8.5em;
+    margin-right: 1em;
+  }
+  main .faq .ttext {
+    font-size: 4rem;
+    margin-top: 1em;
+  }
+  main .faq .book .pages {
+    width: 30rem;
+    height: 30rem;
+  }
+  main .faq .book .page {
+    width: 15rem;
+    height: 30rem;
   }
 }
 @media (min-width: 375px) {
@@ -308,6 +490,30 @@ footer .footer-link:focus {
   nav .nav-button {
     padding: 3.4em 7.5em 1em 7.5em;
   }
+  main .faq p {
+    font-size: 1.2rem;
+  }
+  main .faq .ftext {
+    font-size: 1.8rem;
+    margin-top: 8em;
+    margin-right: 1em;
+  }
+  main .faq .qtext {
+    font-size: 2.7rem;
+    margin-top: 2.5em;
+  }
+  main .faq .ttext {
+    font-size: 5rem;
+    margin-top: 0.5em;
+  }
+  main .faq .book .pages {
+    width: 34rem;
+    height: 30rem;
+  }
+  main .faq .book .page {
+    width: 17rem;
+    height: 30rem;
+  }
 }
 @media (min-width: 411px) {
   nav .navbar-toggler {
@@ -319,6 +525,30 @@ footer .footer-link:focus {
   }
   nav .nav-button {
     padding: 3.4em 8.5em 1em 8.5em;
+  }
+  main .faq p {
+    font-size: 1.45rem;
+  }
+  main .faq .ftext {
+    font-size: 2rem;
+    margin-top: 10.5em;
+    margin-right: 1em;
+  }
+  main .faq .qtext {
+    font-size: 2.9rem;
+    margin-top: 2.5em;
+  }
+  main .faq .ttext {
+    font-size: 6rem;
+    margin-top: 0.5em;
+  }
+  main .faq .book .pages {
+    width: 39rem;
+    height: 40rem;
+  }
+  main .faq .book .page {
+    width: 19.5rem;
+    height: 40rem;
   }
 }
 @media (min-width: 540px) {
@@ -332,6 +562,30 @@ footer .footer-link:focus {
   nav .nav-button {
     padding: 3.4em 11.5em 1em 11.5em;
   }
+  main .faq p {
+    font-size: 1.6rem;
+  }
+  main .faq .ftext {
+    font-size: 2rem;
+    margin-top: 10.5em;
+    margin-right: 1em;
+  }
+  main .faq .qtext {
+    font-size: 3.2rem;
+    margin-top: 2.5em;
+  }
+  main .faq .ttext {
+    font-size: 6rem;
+    margin-top: 0.5em;
+  }
+  main .faq .book .pages {
+    width: 50rem;
+    height: 40rem;
+  }
+  main .faq .book .page {
+    width: 25rem;
+    height: 40rem;
+  }
 }
 @media (min-width: 768px) {
   nav .navbar-toggler {
@@ -341,32 +595,47 @@ footer .footer-link:focus {
     width: 52px;
     height: 52px;
   }
-  nav .nav-button {
-    padding: 3.4em 17.2em 1em 17.2em;
-  }
-  main .login .form-container {
-    padding: 50px;
-  }
-  main .login .form-title {
-    padding-bottom: 20px;
-  }
-  main .login .form-element {
-    width: 350px;
-  }
   main .login {
     background-image: url("../img/loginbackground.jpg");
   }
-  main .register .form-container {
-    padding: 50px;
-  }
-  main .register .form-title {
-    padding-bottom: 20px;
-  }
-  main .register .form-element {
-    width: 350px;
-  }
   main .register {
     background-image: url("../img/registermediumbackground.png");
+  }
+  main .form .form-container {
+    padding: 50px 50px 30px 50px;
+  }
+  main .form .form-title {
+    padding-bottom: 20px;
+  }
+  main .form .form-element {
+    width: 350px;
+  }
+  main .faq p {
+    font-size: 2.5rem;
+  }
+  main .faq .m {
+    margin-top: 18rem;
+  }
+  main .faq .ftext {
+    font-size: 3rem;
+    margin-top: 13.5em;
+    margin-right: 1em;
+  }
+  main .faq .qtext {
+    font-size: 5rem;
+    margin-top: 1.7em;
+  }
+  main .faq .ttext {
+    font-size: 9.5rem;
+    margin-top: 0.5em;
+  }
+  main .faq .book .pages {
+    width: 70rem;
+    height: 70rem;
+  }
+  main .faq .book .page {
+    width: 35rem;
+    height: 70rem;
   }
 }
 @media (min-width: 992px) {
@@ -377,14 +646,15 @@ footer .footer-link:focus {
     width: 55px;
     height: 55px;
   }
-  nav .nav-button {
-    padding: 3.4em 23em 1em 23em;
-  }
 }
 @media (min-width: 1200px) {
   nav .nav-button {
     font-size: 2.2rem;
     padding: 2.5em 5em 0.7em 5em;
+  }
+  nav .nav-item-profile {
+    padding-top: 0.6em;
+    margin: 0em 5em 0em 5em;
   }
   nav .nav-img {
     margin: 0;
@@ -394,5 +664,50 @@ footer .footer-link:focus {
   }
   main .register {
     background-image: url("../img/registerlargebackground.png");
+  }
+  main .faq p {
+    font-size: 2.6rem;
+  }
+  main .faq .m {
+    margin-top: 18rem;
+  }
+  main .faq .ftext {
+    font-size: 4rem;
+    margin-top: 9em;
+    margin-right: 1em;
+  }
+  main .faq .qtext {
+    font-size: 6rem;
+    margin-top: 1.7em;
+  }
+  main .faq .ttext {
+    font-size: 12rem;
+    margin-top: 0.3em;
+  }
+  main .faq .book .pages {
+    width: 100rem;
+    height: 70rem;
+  }
+  main .faq .book .page {
+    width: 50rem;
+    height: 70rem;
+  }
+}
+@media (min-width: 1400px) {
+  nav .nav-item-profile {
+    padding-top: 0.6em;
+    margin: 0em 5em 0em 9.5em;
+  }
+}
+@media (min-width: 1500px) {
+  nav .nav-item-profile {
+    padding-top: 0.6em;
+    margin: 0em 5em 0em 13em;
+  }
+}
+@media (min-width: 1800px) {
+  nav .nav-item-profile {
+    padding-top: 0.6em;
+    margin: 0em 5em 0em 21em;
   }
 }/*# sourceMappingURL=main.css.map */

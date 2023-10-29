@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://i.postimg.cc/kX39dtSC/Achr-shi.png?raw=true" alt="Sublime's custom image"/>
+  <img src="https://i.postimg.cc/k4dWxsmJ/Achr-shi.png?raw=true" alt="Sublime's custom image"/>
 </p>
 
 <p align="center">Portfolio ukazujące umiejętności tworzenia stron internetowych pod kątem SEO i preferencji użytkowników z wykorzystaniem następujących technologii</p>
@@ -26,19 +26,28 @@ Nazwa wzięła się z niecodziennego połączenia dwóch słów: achromatyzm & s
 
 - Navbar
 - Footer
+- Icona karty
+- Podstrona FAQ
+- System rejestracji
+- System logowania
+- Ulepszony system Case'ów
 
 ## :bookmark_tabs: Do Zrobienia
 
-- System rejestracji
-- System logowania
 - System hierarchi kont
 - Możliwość pobierania po uwczesnym zalogowaniu
 - Strona główna
-- Podstrona FAQ
 - Podstrona o nas
+- Podstrona projekty
+- Podstrona wesprzyj
 - Podstrona kontakt
 
 ## :camera: Zrzuty Ekranu
+
+  <img src="https://i.postimg.cc/FR8zyscj/faq.png?raw=true" alt="Sublime's custom image"/>
+  <img src="https://i.postimg.cc/W3htqJDN/faq2.png?raw=true" alt="Sublime's custom image"/>
+  <img src="https://i.postimg.cc/d3C14Pmg/login.png?raw=true" alt="Sublime's custom image"/>
+  <img src="https://i.postimg.cc/SKZJKGx1/register.png?raw=true" alt="Sublime's custom image"/>
 
 ## 💻 Obsługiwane Przeglądarki
 
@@ -46,6 +55,11 @@ Nazwa wzięła się z niecodziennego połączenia dwóch słów: achromatyzm & s
 | ---------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | <a href=""><img alt="" src="https://dl.dropboxusercontent.com/s/ysnbzzggpchkgmj/R%20%281%29.png" width="50"></a> | <a href="gui-tool-tutorials/github-windows-vs2017-tutorial.md"><img alt="" src="https://dl.dropboxusercontent.com/s/lmelfwuzwern3or/R%20%282%29.png" width="50"></a> | <a href=""><img alt="" src="https://dl.dropboxusercontent.com/s/7jse0uey2ftitnw/R%20%283%29.png" width="50"></a> | <a href=""><img alt="" src="https://dl.dropboxusercontent.com/s/72ba19otqbovwh7/R%20%286%29.png" width=50></a> | <a href=""><img alt="" src="https://dl.dropboxusercontent.com/s/kc9qmb8yzjv6pss/Brave_logo.png" width=50></a> | <a href="gui-tool-tutorials/github-windows-intellij-tutorial.md"><img alt="IntelliJ IDEA" src="https://dl.dropboxusercontent.com/s/0oxrf3pld35mxgh/R%20%285%29.png" width=50></a> |
 | Edge                                                                                                             | Firefox                                                                                                                                                              | Chrome                                                                                                           | Opera                                                                                                          | Brave                                                                                                         | Safari                                                                                                                                                                            |
+
+## :camera: Zdjęcia Koncepcyjne
+
+  <img src="https://i.postimg.cc/25mLX61m/c1.png?raw=true" alt="Sublime's custom image"/>
+  <img src="https://i.postimg.cc/Qx2T1SsF/c2.png?raw=true" alt="Sublime's custom image"/>
 
 ## 🙇 Specjalne Podziękowania
 
