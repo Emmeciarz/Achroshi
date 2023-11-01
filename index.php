@@ -42,7 +42,7 @@ session_regenerate_id(true);
 						<a class="nav-link" href="#">O Nas</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">Społeczność</a>
+						<a class="nav-link" href="./index.php?community">Społeczność</a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="./index.php?faq">FAQ</a>
@@ -50,12 +50,8 @@ session_regenerate_id(true);
 					<li class="nav-item">
 						<a class="nav-link" href="#">wesprzyj</a>
 					</li>
-					<!-- </ul> -->
 					<?php
 					if (isset($_SESSION["logged_in"])) {
-
-						echo '<div class="">';
-
 						echo '<li class="nav-item-profile dropdown">';
 						echo '<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Profil</a>';
 						echo '<ul class="dropdown-menu">';
@@ -63,9 +59,6 @@ session_regenerate_id(true);
 						echo '<li><a class="dropdown-item" href="./index.php?login&&wyloguj">Wyloguj</a></li>';
 						echo '</ul>';
 						echo '</li>';
-
-						echo '</div>';
-
 						echo '</ul>';
 					} else {
 						echo '</ul>';
@@ -86,6 +79,7 @@ session_regenerate_id(true);
 				"register" => "./php/register.php",
 				"home" => "./php/home.php",
 				"faq" => "./php/faq.php",
+				"community" => "./php/community.php",
 			];
 			if (isset($link) && array_key_exists($link, $tablica)) {
 				include $tablica[$link];

@@ -28,6 +28,7 @@ Nazwa wzięła się z niecodziennego połączenia dwóch słów: achromatyzm & s
 - Footer
 - Icona karty
 - Podstrona FAQ
+- Podstrona Społeczność
 - System rejestracji
 - System logowania
 - Ulepszony system Case'ów

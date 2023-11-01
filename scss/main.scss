@@ -414,6 +414,88 @@ main {
 		}
 	}
 
+	.community {
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-image: url("../img/community.jpg");
+		width: 100%;
+		z-index: 0;
+		position: relative;
+
+		.shadow {
+			position: absolute;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			background-color: rgba(0, 0, 0, 0.7);
+			z-index: -1;
+		}
+
+		.card {
+			position: relative;
+			margin-bottom: 30px;
+			width: 250px;
+			height: 400px;
+			perspective: 800px;
+			background: none;
+			border: none;
+		}
+
+		.img {
+			width: 100%;
+			height: 100%;
+			background-position: center;
+			background-size: cover;
+			border-radius: 15px;
+			transition: 1s;
+		}
+		.one {
+			background-image: url(../img/smalldiscordd.png);
+		}
+		.two {
+			background-image: url(../img/smalltwitchd.png);
+		}
+		.three {
+			background-image: url(../img/smallsteam.png);
+		}
+		.text {
+			position: absolute;
+			top: 0;
+			left: 0;
+			bottom: 0;
+			right: 0;
+			padding: 15px 10px 15px 10px;
+			border-radius: 15px;
+			text-align: center;
+			background-image: linear-gradient(315deg, #ffffff 0%, #d7e1ec 74%);
+			font-size: 1.45rem;
+			opacity: 0;
+			transition: 1s;
+			transform: rotateY(-180deg);
+		}
+		p {
+			margin-bottom: 20px;
+		}
+		h2 {
+			font-size: 4rem;
+			margin-top: 20px;
+			margin-bottom: 20px;
+		}
+		a {
+			text-decoration: none;
+			font-size: 1.8rem;
+		}
+		.card:hover .text {
+			transform: rotate(0);
+			opacity: 1;
+		}
+		.card:hover .one {
+			transform: rotateY(-180deg);
+			opacity: 0;
+		}
+	}
+
 	.home {
 		// background-image: url("../img/home.png");
 		background-size: cover;
@@ -474,6 +556,12 @@ footer {
 				}
 			}
 		}
+		.community {
+			.card {
+				width: 280px;
+				height: 400px;
+			}
+		}
 	}
 }
 
@@ -511,6 +599,15 @@ footer {
 					width: 15rem;
 					height: 30rem;
 				}
+			}
+		}
+		.community {
+			.card {
+				width: 310px;
+				height: 450px;
+			}
+			.text {
+				font-size: 1.65rem;
 			}
 		}
 	}
@@ -597,6 +694,15 @@ footer {
 					width: 19.5rem;
 					height: 40rem;
 				}
+			}
+		}
+		.community {
+			.card {
+				width: 350px;
+				height: 510px;
+			}
+			.text {
+				font-size: 1.85rem;
 			}
 		}
 	}
@@ -770,6 +876,13 @@ footer {
 	nav .nav-item-profile {
 		padding-top: 0.6em;
 		margin: 0em 5em 0em 9.5em;
+	}
+	main {
+		.community {
+			.card {
+				margin: 0px 2rem;
+			}
+		}
 	}
 }
 
