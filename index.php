@@ -39,7 +39,7 @@ session_regenerate_id(true);
 						<a class="nav-link" href="#">Projekty</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">O Nas</a>
+						<a class="nav-link" href="./index.php?aboutme">O Mnie</a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="./index.php?community">Społeczność</a>
@@ -80,6 +80,7 @@ session_regenerate_id(true);
 				"home" => "./php/home.php",
 				"faq" => "./php/faq.php",
 				"community" => "./php/community.php",
+				"aboutme" => "./php/aboutme.php",
 			];
 			if (isset($link) && array_key_exists($link, $tablica)) {
 				include $tablica[$link];

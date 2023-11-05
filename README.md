@@ -6,6 +6,7 @@
 <p align="center">
   <img src="https://skillicons.dev/icons?i=bootstrap" width="40"/>
   <img src="https://skillicons.dev/icons?i=html" width="40"/>
+  <img src="https://skillicons.dev/icons?i=git" width="40"/>
   <img src="https://skillicons.dev/icons?i=scss" width="40"/>
   <img src="https://skillicons.dev/icons?i=css" width="40"/>
   <img src="https://skillicons.dev/icons?i=php" width="40"/>

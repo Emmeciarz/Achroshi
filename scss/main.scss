@@ -496,6 +496,47 @@ main {
 		}
 	}
 
+	.aboutus {
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-image: url("../img/aboutus.png");
+		width: 100%;
+		z-index: 0;
+		position: relative;
+		.shadow {
+			position: absolute;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			background-color: rgba(0, 0, 0, 0.7);
+			z-index: -1;
+		}
+		.aboutme {
+			margin-left: 1rem;
+			margin-right: 1rem;
+			background-color: $main-color;
+			border: $secondary-color solid 2px;
+			border-radius: 15px;
+
+			.title {
+				padding: 1.5rem 0.7rem 0.7rem 0.7rem;
+				h2 {
+					font-size: 1.65rem;
+				}
+			}
+			.text {
+				.col {
+					padding: 0px 7.5px 10px 7.5px;
+				}
+				.icon {
+					width: 38px;
+				}
+				margin-bottom: 1.6rem;
+			}
+		}
+	}
+
 	.home {
 		// background-image: url("../img/home.png");
 		background-size: cover;
@@ -653,6 +694,20 @@ footer {
 				}
 			}
 		}
+		.aboutus {
+			.aboutme {
+				.title {
+					h2 {
+						font-size: 1.6rem;
+					}
+				}
+				.text {
+					.icon {
+						width: 45px;
+					}
+				}
+			}
+		}
 	}
 }
 
@@ -705,6 +760,24 @@ footer {
 				font-size: 1.85rem;
 			}
 		}
+		.aboutus {
+			.aboutme {
+				.title {
+					padding: 1.5rem 0.7rem 0.7rem 0.7rem;
+					h2 {
+						font-size: 1.8rem;
+					}
+				}
+				.text {
+					.icon {
+						width: 51px;
+					}
+					.col {
+						padding: 0px 7.5px 13px 7.5px;
+					}
+				}
+			}
+		}
 	}
 }
 
@@ -745,6 +818,44 @@ footer {
 				.page {
 					width: 25rem;
 					height: 40rem;
+				}
+			}
+		}
+		.aboutus {
+			.aboutme {
+				.title {
+					padding: 1.5rem 0.7rem 0.7rem 0.7rem;
+					h2 {
+						font-size: 2.3rem;
+					}
+				}
+				.text {
+					.icon {
+						width: 60px;
+					}
+					.col {
+						padding: 0px 7.5px 13px 7.5px;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (min-width: 576px) {
+	main {
+		.aboutus {
+			.aboutme {
+				.title {
+					padding: 1.7rem 1rem 1.5rem 1rem;
+					h2 {
+						font-size: 2.5rem;
+					}
+				}
+				.text {
+					.icon {
+						width: 64px;
+					}
 				}
 			}
 		}
@@ -803,6 +914,24 @@ footer {
 				.page {
 					width: 35rem;
 					height: 70rem;
+				}
+			}
+		}
+		.aboutus {
+			.aboutme {
+				.title {
+					padding: 2rem 1rem 2rem 1rem;
+					h2 {
+						font-size: 2.7rem;
+					}
+				}
+				.text {
+					.icon {
+						width: 67px;
+					}
+					.col {
+						padding: 0px 7.5px 17px 7.5px;
+					}
 				}
 			}
 		}
