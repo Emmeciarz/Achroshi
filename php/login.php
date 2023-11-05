@@ -19,7 +19,7 @@ if (isset($_GET["wyloguj"])) {
                 <button type="submit" name="register" value="register">Zaloguj się</button>
                 <p>Pierwszy raz na Achroshi?</p>
                 <a class="link" href="./index.php?register">utwórz konto</a>
-
+                </form>
                 <?php
                 $servername = "localhost";
                 $username = "root";
@@ -38,24 +38,23 @@ if (isset($_GET["wyloguj"])) {
 
                 ];
 
-                foreach ($log_data as $val) {
-                    if (empty($val)) {
+                if(!empty($log_data["login"]) && !empty($log_data["pass"])){
+                    $result = $conn->query("SELECT `ussers`.`user_password` FROM `ussers` WHERE `ussers`.`user_login` = '" . $log_data["login"] . "';");
+                    $row = $result->fetch_assoc();
+                    $hashedPassword = $row['user_password'];
+                    if (password_verify($log_data["pass"], $hashedPassword)) {
+                        $_SESSION["logged_in"] = true;
+                        session_write_close();
+                        echo "<script>location='./index.php?home'</script>";
+                    } else {
+                        echo "<p class='notification'>Nazwa konta lub hasło są niepoprawne</p>";
                         return;
-                    }
                 }
 
-                $result = $conn->query("SELECT `ussers`.`user_login` FROM `ussers` WHERE `ussers`.`user_login` = '" . $log_data["login"] . "' AND `ussers`.`user_password` = '" . $log_data["pass"] . "';");
-                if (mysqli_num_rows($result) == 0) {
-                    echo "<p class='notification'>Nazwa konta lub hasło są niepoprawne</p>";
-                    return;
-                } elseif (mysqli_num_rows($result) == 1) {
-                    $_SESSION["logged_in"] = true;
-                    session_write_close();
-                    echo "<script>location='./index.php?home'</script>";
                 }
 
                 ?>
-            </form>
+
         </div>
     </div>
 </div>
