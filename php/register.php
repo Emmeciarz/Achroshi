@@ -63,8 +63,8 @@
                     echo "<p class='notification'>Nazwa użytkownika jest zajęta.</p>";
                     return;
                 }
-
-                $conn->query("INSERT INTO `ussers`(`user_login`, `user_password`, `user_email`, `user_access`) VALUES ('" . $reg_data["login"] . "','" . $reg_data["pass1"] . "','" . $reg_data["email"] . "','1')");
+                $hashed_password = password_hash($reg_data["pass1"], PASSWORD_DEFAULT);
+                $conn->query("INSERT INTO `ussers`(`user_login`, `user_password`, `user_email`, `user_access`) VALUES ('" . $reg_data["login"] . "','" . $hashed_password . "','" . $reg_data["email"] . "','1')");
                 echo "<script>location='./index.php?login'</script>";
                 ?>
             </form>
