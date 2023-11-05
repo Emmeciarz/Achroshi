@@ -33,13 +33,14 @@ Nazwa wzięła się z niecodziennego połączenia dwóch słów: achromatyzm & s
 - System rejestracji
 - System logowania
 - Ulepszony system Case'ów
+- hashowanie hasła
+- Podstrona o mnie beat
 
 ## :bookmark_tabs: Do Zrobienia
 
 - System hierarchi kont
 - Możliwość pobierania po uwczesnym zalogowaniu
 - Strona główna
-- Podstrona o nas
 - Podstrona projekty
 - Podstrona wesprzyj
 - Podstrona kontakt
