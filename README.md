@@ -6,6 +6,7 @@
 <p align="center">
   <img src="https://skillicons.dev/icons?i=bootstrap" width="40"/>
   <img src="https://skillicons.dev/icons?i=html" width="40"/>
+  <img src="https://skillicons.dev/icons?i=git" width="40"/>
   <img src="https://skillicons.dev/icons?i=scss" width="40"/>
   <img src="https://skillicons.dev/icons?i=css" width="40"/>
   <img src="https://skillicons.dev/icons?i=php" width="40"/>
@@ -32,13 +33,14 @@ Nazwa wzięła się z niecodziennego połączenia dwóch słów: achromatyzm & s
 - System rejestracji
 - System logowania
 - Ulepszony system Case'ów
+- hashowanie hasła
+- Podstrona o mnie beat
 
 ## :bookmark_tabs: Do Zrobienia
 
 - System hierarchi kont
 - Możliwość pobierania po uwczesnym zalogowaniu
 - Strona główna
-- Podstrona o nas
 - Podstrona projekty
 - Podstrona wesprzyj
 - Podstrona kontakt
