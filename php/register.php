@@ -24,8 +24,8 @@
                 <?php
                 $email_regex = "/^[\w\-.]+@([\w\-]+.)+[\w\-]{2,4}$/";
                 $servername = "localhost";
-                $username = "root";
-                $password = "";
+                $username = "achroshi";
+                $password = "achroshi";
                 $database = "achroshi";
 
                 $conn = mysqli_connect($servername, $username, $password, $database);

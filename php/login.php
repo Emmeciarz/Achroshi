@@ -22,8 +22,8 @@ if (isset($_GET["wyloguj"])) {
             </form>
             <?php
             $servername = "localhost";
-            $username = "root";
-            $password = "";
+            $username = "achroshi";
+            $password = "achroshi";
             $database = "achroshi";
 
             $conn = mysqli_connect($servername, $username, $password, $database);
